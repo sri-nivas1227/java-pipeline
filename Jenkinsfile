@@ -6,5 +6,11 @@ pipeline {
                 sh 'java Hello.java'
             }
         }
+        stage{
+            steps{
+                sh 'echo "all set"'
+
+            }
+        }
     }
 }
