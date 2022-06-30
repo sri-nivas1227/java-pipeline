@@ -8,7 +8,9 @@ pipeline {
         }
         stage('test'){
             steps{
-                sh 'echo "all set"'
+                timeout(time:1, unit: 'MINUTES'){
+                    sh 'sleep 90'
+                }
 
             }
         }
